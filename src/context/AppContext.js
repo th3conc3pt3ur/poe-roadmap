@@ -42,7 +42,7 @@ const AppContextProvider = (props) => {
         if(sanitizeUrl.indexOf("/raw/") === -1) {
             sanitizeUrl = sanitizeUrl.replace("https://pastebin.com/","https://pastebin.com/raw/")
         }
-        axios.post('http://127.0.0.1:8000/api/pastebin',sanitizeUrl)
+        axios.post(process.env.REACT_APP_API+'/api/pastebin',sanitizeUrl)
         .then(function (response) {
             // handle success
             getPobCode(response.data);
@@ -60,7 +60,7 @@ const AppContextProvider = (props) => {
      * response data, and sets the isLoading state to false.
      */
     const getPriceApi = () => {
-        axios.get('http://127.0.0.1:8000/api/price')
+        axios.get(process.env.REACT_APP_API+'/api/price')
         .then(function (response) {
             // handle success
             setPrices(response.data);
@@ -78,7 +78,7 @@ const AppContextProvider = (props) => {
      * variable to the response data, and sets the isLoading state to false.
      */
     const getGemsApi = () => {
-        axios.get('http://127.0.0.1:8000/api/gems')
+        axios.get(process.env.REACT_APP_API+'/api/gems')
         .then(function (response) {
             // handle success
             setGems(response.data);
