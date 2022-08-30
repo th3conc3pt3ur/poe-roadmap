@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #272b30;
+  background-image: url(/public/img/background.jpg);
+  background-attachment: fixed;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+@font-face {
+  font-family: PoeFont;
+  src: url("./assets/font/Fontin-Regular.ttf");
+}
+header{
+font-family: PoeFont;
+color: #c7b38b;
+}
+.customTitle {
+  font-family: PoeFont;
+  color: #c7b38b;
+}
+.btnCustom {
+  background-image: linear-gradient(#52565a,#3a3f44 60%,#353a3f);
+  border: 1px solid rgba(0,0,0,.6);
+}
+.btnCustom:hover {
+  background-image: linear-gradient(#25282c,#292c30 40%,#2b2f32);
+  border: 1px solid rgba(0,0,0,.6);
+}
+.btnCustom:focus {
+  background-image: linear-gradient(#25282c,#292c30 40%,#2b2f32);
+}
