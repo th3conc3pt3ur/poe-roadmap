@@ -1,4 +1,5 @@
-![poe_roadmap_150](https://user-images.githubusercontent.com/1927030/187444832-dfa8d8b9-7fdc-4895-8478-b1915afbd728.png)
+<p align="center"><img src="https://user-images.githubusercontent.com/1927030/187444832-dfa8d8b9-7fdc-4895-8478-b1915afbd728.png"/></p>
+
 # PoeRoadMap
 ![React](https://img.shields.io/badge/Code-React-blue?style=for-the-badge&logo=react)
 ![Tailwindcss](https://img.shields.io/badge/CSS-Tailwindcss-blue?style=for-the-badge&logo=tailwindcss)
