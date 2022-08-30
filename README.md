@@ -4,6 +4,7 @@
 ![React](https://img.shields.io/badge/Code-React-blue?style=for-the-badge&logo=react)
 ![Tailwindcss](https://img.shields.io/badge/CSS-Tailwindcss-blue?style=for-the-badge&logo=tailwindcss)
 ![Boostrap](https://img.shields.io/badge/CSS-Bootstrap-7952b3?style=for-the-badge&logo=bootstrap)
+[![Patron](https://img.shields.io/badge/Donate-Patreon-red?style=for-the-badge&logo=patreon)](https://www.patreon.com/theconcepteur)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
