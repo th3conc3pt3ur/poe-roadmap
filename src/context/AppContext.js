@@ -145,18 +145,27 @@ const AppContextProvider = (props) => {
         let skills = null;
         let tempGemByLevel = [];
         let myMainSocketGroup = _build.PathOfBuilding.Build._mainSocketGroup;
-
+        
         /* SKILLS STUFF , depending of the pob you can have SkillSet or not */
         if(_build.PathOfBuilding.Skills.Skill !== undefined) {
             skills = _build.PathOfBuilding.Skills.Skill
         } else {
             skills = [];
-            _build.PathOfBuilding.Skills.SkillSet.forEach(skillSet => {
-                skillSet.Skill.forEach(skill => {
+            // SkillSet can contain array Or object we need to check it
+            if (Array.isArray(_build.PathOfBuilding.Skills.SkillSet)) {
+                _build.PathOfBuilding.Skills.SkillSet.forEach(skillSet => {
+                    skillSet.Skill.forEach(skill => {
+                        skills.push(skill);
+                    });
+                })
+            } else {
+                _build.PathOfBuilding.Skills.SkillSet.Skill.forEach(skill => {
                     skills.push(skill);
-                });
-            })
+                })
+            }
+            
         }
+
         setSlots(skills);
         let varCurrentMainSkill = null;
         skills.forEach(function(element,i){
